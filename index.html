@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se importa libreria jQuery -->
+    <script src="librerias/jquery-3.5.1.min.js"></script>
+    <!-- se importa documento CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+    <!-- se importa Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Libreria para guardar PDF -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <title>Carga archivos Protección</title>
+</head>
+
+<body class="row justify-content-center align-items-center vh-100">
+    <div id="container" class="justify-content-center align-items-center">
+        <div class="card" id="card">
+            <img class="card-img-top" src="logo/logo_proteccion.png" alt="Card image cap">
+            <div class="card-body">
+                <h3 id="title" class="card-title">Carga de archivo Protección</h3>
+                <p class="card-text">Por favor dar clic en el boton "Cargar archivo" para evaluar la imagen en la hoja A4</p>
+                <br>
+                <input type='file' id="fichero" />
+                <input type="button" value="Cargar archivo" class="btn btn-info" onclick="document.getElementById('fichero').click();">
+                <p id="texto"> </p><br />
+            </div>
+        </div>
+        <div id="emulador" class="card">
+            <div class="card-body">
+                <h3 class="card-title">Emulador de hoja A4 para protección</h3>
+                <div id="hojaA4">
+                    <img id="img" src="" />
+                </div>
+                <br>
+                <button id="btn-return" class="btn btn-outline-info">REGRESAR</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>

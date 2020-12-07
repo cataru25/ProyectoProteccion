@@ -1,0 +1,55 @@
+#fichero {
+    display: none;
+}
+
+#card {
+    width: 50rem;
+}
+
+#emulador {
+    display: none;
+}
+
+#anuncio {
+    display: none;
+}
+
+#hojaA4 {
+    border: solid 2px black;
+}
+
+
+/* para mobile pequeños*/
+
+@media (min-width: 100px) {
+    #card {
+        width: 15rem;
+    }
+}
+
+
+/* para mobile grandes */
+
+@media (min-width: 410px) {
+    #card {
+        width: 22rem;
+    }
+}
+
+
+/* para tabletas */
+
+@media (min-width: 630px) {
+    #card {
+        width: 35rem;
+    }
+}
+
+
+/* para computadores */
+
+@media (min-width: 880px) {
+    #card {
+        width: 50rem;
+    }
+}
